@@ -1,0 +1,28 @@
+// design colors
+$proff_gradient: linear-gradient(135.03deg, #f76767 1.02%, #b40101 99.26%);
+$proff_red: #bb0000;
+$proff_hover: #4267b2;
+
+$proff_gray-100: #f3f5f8;
+$background_gray: #f9fafb;
+$proff_gray-200: #ebeaef;
+$proff_gray-300: #dee2e8;
+// $proff_gray-400: #ced4da;
+$proff_gray-500: #acb3b8;
+$proff_gray-550: #959fa5;
+$proff_gray-600: #6c757d;
+$proff_gray-700: #586268;
+// $proff_gray-800: #343a40;
+$proff_gray-900: #2e3131;
+
+// text colors
+$main_text_color: $proff_gray-900;
+$second_text_color: $proff_gray-700;
+$highlight_text_color: $proff_red;
+$info_text_color: $proff_gray-600;
+$placeholder_color: $proff_gray-500;
+$second_placeholder_color: $proff_gray-550;
+$border: $proff_gray-300;
+$holder: $proff_gray-100;
+
+$tr_hover: all 0.3s;

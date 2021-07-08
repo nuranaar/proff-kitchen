@@ -1,0 +1,108 @@
+#slider {
+    @include media-breakpoint-up(lg) {
+        .carousel-item {
+            height: 500px;
+            img {
+                height: 100%;
+            }
+        }
+    }
+    .slider-shadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            115.33deg,
+            #70706f 32.13%,
+            #7d7d7a 45.45%,
+            #8e8d8d 59.86%,
+            #a1a2a3 73.22%,
+            #b3b6b5 86.29%,
+            #bec0c2 100%
+        );
+        mix-blend-mode: multiply;
+    }
+    .slider-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .slider-title {
+            width: 50%;
+            color: $white;
+            font-size: 4rem;
+            text-transform: uppercase;
+            font-family: fantasy;
+            font-weight: bold;
+            @include media-breakpoint-down(lg) {
+                font-size: 3.5rem;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 2rem;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 1.5rem;
+            }
+        }
+        .slider-info {
+            width: 80%;
+            color: $white;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            font-weight: 500;
+            @include media-breakpoint-down(md) {
+                font-size: 1.2rem;
+            line-height: 2.2rem;
+
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+            line-height: 1.5rem;
+
+            }
+        }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        .icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            background: linear-gradient(180deg, rgba(235, 234, 239, 0.5) 0%, rgba(235, 234, 239, 0.5) 100%);
+            backdrop-filter: blur(3px);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 30%;
+            }
+        }
+        @include media-breakpoint-up(xl) {
+            width: 15%;
+        }
+        @include media-breakpoint-down(lg) {
+            width: 7%;
+            .icon {
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+        }
+        @include media-breakpoint-down(md) {
+            width: 10%;
+            .icon {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            width: 10%;
+            .icon {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+}

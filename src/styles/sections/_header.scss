@@ -1,0 +1,92 @@
+#pre-header {
+    .line {
+        height: 4px;
+        width: 100%;
+        background-color: $proff_red;
+    }
+    .social-media {
+        &.list-inline {
+            .list-inline-item {
+                margin-right: 1.25rem;
+                i {
+                    font-size: 1rem;
+                    color: $second_text_color;
+                    transition: $tr_hover;
+                    cursor: pointer;
+                    &:hover {
+                        color: $proff_hover;
+                    }
+                }
+            }
+        }
+    }
+    .page-lang {
+        p {
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        transition: all 0.3s;
+        .list-inline {
+            .list-inline-item {
+                margin: 0;
+                margin-left: 1rem;
+                border-radius: 4px;
+                color: $main_text_color;
+                font-weight: 500;
+                padding: 0.5rem;
+                transition: $tr_hover;
+                cursor: pointer;
+                display: inline-block;
+                &:hover {
+                    color: $highlight_text_color;
+                }
+                &.active {
+                    padding: 0.5rem 1rem;
+                    background-color: $holder;
+                }
+            }
+        }
+    }
+    .logo {
+        width: 9.625rem;
+    }
+    .search-bar {
+        max-width: 50rem;
+        @include media-breakpoint-down(sm) {
+            max-width: 20rem;
+        }
+        input {
+            width: 100%;
+            border: 1px solid $border;
+            background-color: $holder;
+            padding: 0.7rem 1.5rem;
+            border-radius: 4px 0px 0px 4px;
+            font-weight: 500;
+            &::placeholder {
+                color: $second_placeholder_color;
+            }
+            &:active {
+                background-color: $white;
+            }
+        }
+        .search-btn {
+            color: $white;
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem;
+            background: $proff_gradient;
+            border-radius: 0px 4px 4px 0px;
+        }
+    }
+    .navbar {
+        &.list-inline {
+            .list-inline-item {
+                font-family: fantasy;
+                font-weight: bold;
+                font-size: 1.5rem;
+                line-height: 3rem;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
