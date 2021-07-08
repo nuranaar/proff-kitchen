@@ -2,7 +2,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-Bold.eot');
     src: url('SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-Bold.woff') format('woff'),
         url('SFProDisplay-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
@@ -13,7 +12,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-BoldItalic.eot');
     src: url('SFProDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-BoldItalic.woff') format('woff'),
         url('SFProDisplay-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
@@ -24,7 +22,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-BlackItalic.eot');
     src: url('SFProDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-BlackItalic.woff') format('woff'),
         url('SFProDisplay-BlackItalic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
@@ -35,7 +32,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-Black.eot');
     src: url('SFProDisplay-Black.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-Black.woff') format('woff'),
         url('SFProDisplay-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
@@ -46,7 +42,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-Light.eot');
     src: url('SFProDisplay-Light.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-Light.woff') format('woff'),
         url('SFProDisplay-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
@@ -57,7 +52,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-HeavyItalic.eot');
     src: url('SFProDisplay-HeavyItalic.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-HeavyItalic.woff') format('woff'),
         url('SFProDisplay-HeavyItalic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
@@ -68,7 +62,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-Heavy.eot');
     src: url('SFProDisplay-Heavy.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-Heavy.woff') format('woff'),
         url('SFProDisplay-Heavy.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
@@ -79,7 +72,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-LightItalic.eot');
     src: url('SFProDisplay-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-LightItalic.woff') format('woff'),
         url('SFProDisplay-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
@@ -90,7 +82,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-Medium.eot');
     src: url('SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-Medium.woff') format('woff'),
         url('SFProDisplay-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
@@ -101,7 +92,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-MediumItalic.eot');
     src: url('SFProDisplay-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-MediumItalic.woff') format('woff'),
         url('SFProDisplay-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
@@ -112,7 +102,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-Semibold.eot');
     src: url('SFProDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-Semibold.woff') format('woff'),
         url('SFProDisplay-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
@@ -123,7 +112,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-Regular.eot');
     src: url('SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-Regular.woff') format('woff'),
         url('SFProDisplay-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -134,7 +122,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-SemiboldItalic.eot');
     src: url('SFProDisplay-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-SemiboldItalic.woff') format('woff'),
         url('SFProDisplay-SemiboldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
@@ -145,7 +132,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-RegularItalic.eot');
     src: url('SFProDisplay-RegularItalic.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-RegularItalic.woff') format('woff'),
         url('SFProDisplay-RegularItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
@@ -156,7 +142,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-Ultralight.eot');
     src: url('SFProDisplay-Ultralight.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-Ultralight.woff') format('woff'),
         url('SFProDisplay-Ultralight.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
@@ -167,7 +152,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-Thin.eot');
     src: url('SFProDisplay-Thin.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-Thin.woff') format('woff'),
         url('SFProDisplay-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
@@ -178,7 +162,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-ThinItalic.eot');
     src: url('SFProDisplay-ThinItalic.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-ThinItalic.woff') format('woff'),
         url('SFProDisplay-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
@@ -189,7 +172,6 @@
     font-family: 'SFProDisplay';
     src: url('SFProDisplay-UltralightItalic.eot');
     src: url('SFProDisplay-UltralightItalic.eot?#iefix') format('embedded-opentype'),
-        url('SFProDisplay-UltralightItalic.woff') format('woff'),
         url('SFProDisplay-UltralightItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;

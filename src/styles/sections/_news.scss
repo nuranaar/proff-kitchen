@@ -1,0 +1,54 @@
+#news {
+    margin: 5rem 0;
+    .discounts {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("http://localhost:8080/assets/news-1.png");
+        width: 100%;
+        color: $white;
+        padding: 52px;
+        .category {
+            font-family: $font_family_second;
+            text-decoration: underline;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+        .title {
+            font-family: $font_family_second;
+            font-weight: bold;
+            font-size: 3rem;
+            line-height: 1.1em;
+        }
+        .info {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        a {
+            background-color: $white;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            padding: 0.8em ;
+        }
+    }
+    .news-card {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //  background-image: url("http://localhost:8080/assets/news-2.png");
+        width: 100%;
+        color: $white;
+        padding: 52px;
+        .title {
+            font-family: $font_family_second;
+            font-weight: bold;
+            font-size: 1.75rem;
+            line-height: 1.1em;
+        }
+    }
+}
