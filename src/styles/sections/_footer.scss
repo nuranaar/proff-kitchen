@@ -1,0 +1,19 @@
+#footer {
+    padding: 5rem 0;
+    text-align: center;
+    background-color: $background_gray;
+}
+.copyright {
+    background-color: $highlight_text_color;
+    p {
+        padding: 1rem 0;
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: $white;
+    }
+    .talk-icon {
+        transform: translateY(-50%);
+    }
+}

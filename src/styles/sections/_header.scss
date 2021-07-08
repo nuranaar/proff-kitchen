@@ -1,24 +1,24 @@
+.social-media {
+    &.list-inline {
+        .list-inline-item {
+            margin-right: 1.25rem;
+            i {
+                font-size: 1rem;
+                color: $second_text_color;
+                transition: $tr_hover;
+                cursor: pointer;
+                &:hover {
+                    color: $proff_hover;
+                }
+            }
+        }
+    }
+}
 #pre-header {
     .line {
         height: 4px;
         width: 100%;
         background-color: $proff_red;
-    }
-    .social-media {
-        &.list-inline {
-            .list-inline-item {
-                margin-right: 1.25rem;
-                i {
-                    font-size: 1rem;
-                    color: $second_text_color;
-                    transition: $tr_hover;
-                    cursor: pointer;
-                    &:hover {
-                        color: $proff_hover;
-                    }
-                }
-            }
-        }
     }
     .page-lang {
         p {
@@ -77,15 +77,18 @@
             border-radius: 0px 4px 4px 0px;
         }
     }
-    .navbar {
-        &.list-inline {
-            .list-inline-item {
-                font-family: $font_family_second;
-                font-weight: bold;
-                font-size: 1.5rem;
-                line-height: 3rem;
-                letter-spacing: 0.02em;
-                text-transform: uppercase;
+}
+.navbar {
+    &.list-inline {
+        .list-inline-item {
+            font-family: $font_family_second;
+            font-weight: bold;
+            font-size: 1.5rem;
+            line-height: 3rem;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            &.active{
+                color: $highlight_text_color
             }
         }
     }
