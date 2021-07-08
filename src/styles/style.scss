@@ -1,11 +1,19 @@
 // @import '~font-awesome/css/font-awesome.css';
 @import "~@fortawesome/fontawesome-free/css/all.css";
+@import "fonts/BebasNeue/stylesheet.css";
+@import "fonts/FontAwesome/stylesheet.css";
+@import "fonts/SFProDisplay/stylesheet.css";
+@import "~slick-carousel/slick/slick.scss";
 @import "vendors/bootstrap";
 @import "molecules/sprite";
 @import "sections/custom-variables";
 @import "sections/custom-styles";
 @import "sections/header";
 @import "sections/slider";
+@import "sections/categories";
+@import "sections/services";
+@import "sections/bests";
+@import "sections/statistic";
 
 // Sprite Icons
 .icon {

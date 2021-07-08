@@ -1,0 +1,66 @@
+#statistic {
+    .background {
+        position: relative;
+        width: 100%;
+        .background-image {
+            width: 100%;
+            object-fit: cover;
+        }
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            img {
+                width: 5.5rem;
+                margin-bottom: 0.5rem;
+            }
+            .count {
+                color: $white;
+                font-weight: bold;
+                font-size: 3.25rem;
+                line-height: 4.5rem;
+            }
+            .info {
+                color: $white;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                text-transform: uppercase;
+            }
+            @include media-breakpoint-down(md) {
+                .count {
+                    font-size: 2.25rem;
+                    line-height: 2rem;
+                }
+                .info {
+                    font-size: 0.8rem;
+                    line-height: 1rem;
+                }
+            }
+            @include media-breakpoint-down(sm) {
+                .count {
+                    font-size: 2rem;
+                    line-height: 1rem;
+                }
+                .info {
+                    font-size: 0.8rem;
+                    line-height: 1rem;
+                }
+                img {
+                    width: 4em;
+                }
+            }
+        }
+    }
+}
+#partners {
+    .partners-content {
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}

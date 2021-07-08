@@ -1,5 +1,6 @@
 'use strict';
 import 'bootstrap/dist/js/bootstrap';
+import 'slick-carousel/slick/slick'
 
 $(function () {
   $(".page-lang .list-inline-item.active").siblings().hide();
@@ -11,4 +12,42 @@ $(function () {
     });
   });
 
+
+  navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+
+
+    $('.slider').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      centerMode: true,
+      responsive: [
+        {
+          breakpoint: 1440,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }
+      ]
+    });
 });

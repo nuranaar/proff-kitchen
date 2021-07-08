@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    src: url('FontAwesome5FreeRegular.eot');
+    src: url('FontAwesome5FreeRegular.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome5FreeRegular.woff2') format('woff2'),
+        url('FontAwesome5FreeRegular.woff') format('woff'),
+        url('FontAwesome5FreeRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    src: url('FontAwesome5BrandsRegular.eot');
+    src: url('FontAwesome5BrandsRegular.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome5BrandsRegular.woff2') format('woff2'),
+        url('FontAwesome5BrandsRegular.woff') format('woff'),
+        url('FontAwesome5BrandsRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Free Solid';
+    src: url('FontAwesome5FreeSolid.eot');
+    src: url('FontAwesome5FreeSolid.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome5FreeSolid.woff2') format('woff2'),
+        url('FontAwesome5FreeSolid.woff') format('woff'),
+        url('FontAwesome5FreeSolid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    src: url('FontAwesome5Brands-Regular.eot');
+    src: url('FontAwesome5Brands-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome5Brands-Regular.woff2') format('woff2'),
+        url('FontAwesome5Brands-Regular.woff') format('woff'),
+        url('FontAwesome5Brands-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Pro';
+    src: url('FontAwesome5Pro-Light.eot');
+    src: url('FontAwesome5Pro-Light.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome5Pro-Light.woff2') format('woff2'),
+        url('FontAwesome5Pro-Light.woff') format('woff'),
+        url('FontAwesome5Pro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Pro';
+    src: url('FontAwesome5Pro-Regular.eot');
+    src: url('FontAwesome5Pro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome5Pro-Regular.woff2') format('woff2'),
+        url('FontAwesome5Pro-Regular.woff') format('woff'),
+        url('FontAwesome5Pro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    src: url('FontAwesome6Brands-Regular.eot');
+    src: url('FontAwesome6Brands-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome6Brands-Regular.woff2') format('woff2'),
+        url('FontAwesome6Brands-Regular.woff') format('woff'),
+        url('FontAwesome6Brands-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Duotone Solid';
+    src: url('FontAwesome5Duotone-Solid.eot');
+    src: url('FontAwesome5Duotone-Solid.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome5Duotone-Solid.woff2') format('woff2'),
+        url('FontAwesome5Duotone-Solid.woff') format('woff'),
+        url('FontAwesome5Duotone-Solid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Pro Solid';
+    src: url('FontAwesome5Pro-Solid.eot');
+    src: url('FontAwesome5Pro-Solid.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome5Pro-Solid.woff2') format('woff2'),
+        url('FontAwesome5Pro-Solid.woff') format('woff'),
+        url('FontAwesome5Pro-Solid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Pro';
+    src: url('FontAwesome6Pro-Thin.eot');
+    src: url('FontAwesome6Pro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome6Pro-Thin.woff2') format('woff2'),
+        url('FontAwesome6Pro-Thin.woff') format('woff'),
+        url('FontAwesome6Pro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('FontAwesome.eot');
+    src: url('FontAwesome.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome.woff2') format('woff2'),
+        url('FontAwesome.woff') format('woff'),
+        url('FontAwesome.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Pro Solid';
+    src: url('FontAwesome6Pro-Solid.eot');
+    src: url('FontAwesome6Pro-Solid.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome6Pro-Solid.woff2') format('woff2'),
+        url('FontAwesome6Pro-Solid.woff') format('woff'),
+        url('FontAwesome6Pro-Solid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('FontAwesome_1.eot');
+    src: url('FontAwesome_1.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome_1.woff2') format('woff2'),
+        url('FontAwesome_1.woff') format('woff'),
+        url('FontAwesome_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Pro';
+    src: url('FontAwesome6Pro-Regular.eot');
+    src: url('FontAwesome6Pro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome6Pro-Regular.woff2') format('woff2'),
+        url('FontAwesome6Pro-Regular.woff') format('woff'),
+        url('FontAwesome6Pro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Duotone Solid';
+    src: url('FontAwesome6Duotone-Solid.eot');
+    src: url('FontAwesome6Duotone-Solid.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome6Duotone-Solid.woff2') format('woff2'),
+        url('FontAwesome6Duotone-Solid.woff') format('woff'),
+        url('FontAwesome6Duotone-Solid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Pro';
+    src: url('FontAwesome6Pro-Light.eot');
+    src: url('FontAwesome6Pro-Light.eot?#iefix') format('embedded-opentype'),
+        url('FontAwesome6Pro-Light.woff2') format('woff2'),
+        url('FontAwesome6Pro-Light.woff') format('woff'),
+        url('FontAwesome6Pro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

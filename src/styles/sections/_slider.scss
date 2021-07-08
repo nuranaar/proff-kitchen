@@ -35,7 +35,7 @@
             color: $white;
             font-size: 4rem;
             text-transform: uppercase;
-            font-family: fantasy;
+            font-family: $font_family_second;
             font-weight: bold;
             @include media-breakpoint-down(lg) {
                 font-size: 3.5rem;
