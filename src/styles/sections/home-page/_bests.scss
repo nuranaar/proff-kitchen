@@ -1,4 +1,5 @@
-#best-products {
+#best-products,
+#search-page {
     margin: 5rem 0;
     .title {
         font-family: $font_family_second;
@@ -66,4 +67,33 @@
 
 .slick-slide {
     height: fit-content;
+}
+
+.pagination {
+    margin-top: 2rem;
+    .page-item {
+        margin: 0 12px;
+        .page-link {
+            width: 2.5rem;
+            height: 2.5rem;
+            text-align: center;
+            border: none;
+            border-radius: 4px;
+            background-color: $holder;
+            color: $second_placeholder_color;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            i {
+                line-height: 24px;
+            }
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        &.active .page-link {
+            color: $white;
+            background-color: $main_text_color;
+        }
+    }
 }

@@ -1,0 +1,46 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    {{> common/head }}
+
+</head>
+
+<body>
+
+    {{> common/header }}
+
+    {{!-- breadcrumb --}}
+    <div class="container-fluid">
+        <div class="row">
+            <nav aria-label="breadcrumb" class="breadcrumb-nav w-100">
+                <div class="container">
+                    <div class="row">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Əsas</a></li>
+                            <li class="breadcrumb-item breadcrumb-icon">
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Xəbərlər</li>
+                        </ol>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    {{> news-details-content }}
+    {{> partners }}
+    {{> bests }}
+    {{> contact-us }}
+    {{> common/footer }}
+
+</body>
+
+</html>

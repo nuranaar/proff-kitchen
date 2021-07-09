@@ -47,6 +47,18 @@ body {
     font-size: 1rem;
     line-height: 1.5em;
     margin-bottom: 1.5em;
+    span {
+        color: $highlight_text_color;
+    }
+}
+.content-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    span {
+        color: $highlight_text_color;
+    }
 }
 .info {
     color: $second_text_color;

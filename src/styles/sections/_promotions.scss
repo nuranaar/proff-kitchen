@@ -1,4 +1,4 @@
-#promotions {
+#promotions, #news {
     margin: 3.25rem 0 5rem;
     .card {
         margin-bottom: 2rem;
@@ -28,12 +28,7 @@
 }
 #promotion-detail {
     margin: 3.25rem 0 5rem;
-    .content-title {
-        font-weight: 600;
-        font-size: 1.5rem;
-        line-height: 3rem;
-        margin-bottom: 2rem;
-    }
+    
     .promotion-image {
         width: 100%;
         margin-bottom: 1.5rem;
@@ -51,7 +46,7 @@
         font-size: 1rem;
         line-height: 1.5rem;
         text-decoration: underline;
-        img{
+        img {
             margin-right: 1.1rem;
         }
     }
