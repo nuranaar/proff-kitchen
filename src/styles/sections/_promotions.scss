@@ -26,3 +26,33 @@
         }
     }
 }
+#promotion-detail {
+    margin: 3.25rem 0 5rem;
+    .content-title {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        margin-bottom: 2rem;
+    }
+    .promotion-image {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .promotion-social-media {
+        background: linear-gradient(162.1deg, #e4e8ee 4.67%, rgba(255, 255, 255, 0.7) 87.8%);
+        box-shadow: 40px 20px 100px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        padding: 2rem;
+        text-align: center;
+    }
+    .go-back {
+        color: $main_text_color;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-decoration: underline;
+        img{
+            margin-right: 1.1rem;
+        }
+    }
+}
