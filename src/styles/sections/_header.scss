@@ -87,8 +87,16 @@
             line-height: 3rem;
             letter-spacing: 0.02em;
             text-transform: uppercase;
-            &.active{
-                color: $highlight_text_color
+            a {
+                color: $main_text_color;
+                transition: $tr_hover;
+                &:hover {
+                    text-decoration: none;
+                    color: $highlight_text_color;
+                }
+            }
+            &.active a {
+                color: $highlight_text_color;
             }
         }
     }

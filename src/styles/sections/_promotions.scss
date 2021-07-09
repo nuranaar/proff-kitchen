@@ -1,0 +1,28 @@
+#promotions {
+    margin: 3.25rem 0 5rem;
+    .card {
+        margin-bottom: 2rem;
+        border: none;
+        .card-img-top {
+            border-radius: 4px;
+        }
+        .card-body {
+            padding: 0.8rem 1.2rem;
+            text-align: center;
+            .card-title {
+                font-size: 1.5rem;
+                line-height: 2rem;
+                a {
+                    color: $main_text_color;
+                    &:hover {
+                        text-decoration: none;
+                        color: $highlight_text_color;
+                    }
+                }
+            }
+            .content-text {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
