@@ -9,13 +9,15 @@
 @import "sections/custom-variables";
 @import "sections/custom-styles";
 @import "sections/header";
-@import "sections/slider";
-@import "sections/categories";
-@import "sections/services";
-@import "sections/bests";
-@import "sections/statistic";
-@import "sections/news";
+@import "sections/home-page/slider";
+@import "sections/home-page/categories";
+@import "sections/home-page/services";
+@import "sections/home-page/bests";
+@import "sections/home-page/statistic";
+@import "sections/home-page/discounts";
+@import "sections/home-page/news";
 @import "sections/footer";
+@import "sections/about-page";
 
 // Sprite Icons
 .icon {

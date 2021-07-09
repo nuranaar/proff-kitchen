@@ -38,13 +38,10 @@
             font-family: $font_family_second;
             font-weight: bold;
             @include media-breakpoint-down(lg) {
-                font-size: 3.5rem;
+                // font-size: 3.5rem;
             }
             @include media-breakpoint-down(md) {
-                font-size: 2rem;
-            }
-            @include media-breakpoint-down(sm) {
-                font-size: 1.5rem;
+                font-size: 3rem;
             }
         }
         .slider-info {
@@ -55,13 +52,7 @@
             font-weight: 500;
             @include media-breakpoint-down(md) {
                 font-size: 1.2rem;
-            line-height: 2.2rem;
-
-            }
-            @include media-breakpoint-down(sm) {
-                font-size: 1rem;
-            line-height: 1.5rem;
-
+                line-height: 2.2rem;
             }
         }
     }

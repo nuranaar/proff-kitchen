@@ -1,4 +1,4 @@
-#news {
+#discounts {
     margin: 5rem 0;
     .discounts {
         background-position: center;
@@ -7,7 +7,8 @@
         background-image: url("http://localhost:8080/assets/news-1.png");
         width: 100%;
         color: $white;
-        padding: 52px;
+        padding: 3.25em;
+
         .category {
             font-family: $font_family_second;
             text-decoration: underline;
@@ -33,8 +34,14 @@
             background-color: $white;
             font-weight: 500;
             font-size: 1rem;
-            line-height: 1.5rem;
-            padding: 0.8em ;
+            line-height: 1.5em;
+            padding: 0.8em;
+        }
+        @include media-breakpoint-between(sm, md) {
+            padding: 2.5em;
+        }
+        @include media-breakpoint-between(xs, sm) {
+            padding: 3rem;
         }
     }
     .news-card {
@@ -44,15 +51,21 @@
         //  background-image: url("http://localhost:8080/assets/news-2.png");
         width: 100%;
         color: $white;
-        padding: 52px;
+        padding: 3.25rem;
         .title {
             font-family: $font_family_second;
             font-weight: bold;
             font-size: 1.75rem;
             line-height: 1.1em;
         }
-        .info{
-        color: $white;
+        .info {
+            color: $white;
+        }
+        @include media-breakpoint-between(sm, md) {
+            padding: 2.5em;
+        }
+        @include media-breakpoint-between(xs, sm) {
+            padding: 3rem;
         }
     }
 }

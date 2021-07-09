@@ -24,7 +24,16 @@ $(function () {
       slidesToShow: 5,
       slidesToScroll: 5,
       centerMode: true,
+      autoplay:true,
       responsive: [
+        {
+          breakpoint: 2500,
+          settings: {
+            slidesToShow: 6,
+            slidesToScroll: 6,
+            infinite: true,
+          }
+        },
         {
           breakpoint: 1440,
           settings: {

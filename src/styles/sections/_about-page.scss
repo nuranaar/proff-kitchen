@@ -1,0 +1,60 @@
+// f054
+.breadcrumb-nav {
+    background-color: $holder;
+    .breadcrumb {
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5em;
+        color: $second_text_color;
+        margin: 0;
+        padding: 1em 0;
+        a {
+            color: $second_text_color;
+        }
+        .breadcrumb-item {
+            padding: 0;
+            &.breadcrumb-icon {
+                padding-left: 12px;
+            }
+        }
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: "";
+        }
+    }
+}
+#certificate {
+    margin: 5rem 0;
+    .certificate-img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+#about-content {
+    margin: 3.25rem 0;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+#gallery {
+    margin-bottom: 5rem;
+    .carousel-inner {
+        border-radius: 6px;
+    }
+    .carousel-indicators {
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 2rem;
+        li {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            &.active {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+}

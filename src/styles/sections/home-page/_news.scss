@@ -1,0 +1,28 @@
+#news {
+    background-color: $background_gray;
+    padding: 5rem 0;
+    .card {
+        border: none;
+        .card-img-top {
+            border-radius: 4px;
+        }
+        .card-body {
+            margin-top: 0.8rem;
+            background-color: $background_gray;
+            padding: 0;
+            .card-title {
+                font-weight: 600;
+                font-size: 1.25rem;
+                line-height: 1.2em;
+            }
+        }
+    }
+    .info {
+        span {
+            padding-left: 1rem;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.5em;
+        }
+    }
+}
