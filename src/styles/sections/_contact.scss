@@ -1,5 +1,5 @@
 .contact-info {
-    padding: 4.5rem;
+    padding: 3.5rem 0 4.5rem;
     background-color: $highlight_text_color;
     .contact-title {
         font-weight: bold;
@@ -15,5 +15,38 @@
         line-height: 1.5rem;
         color: $white;
         margin-bottom: 0;
+    }
+    .contact-form {
+        position: absolute;
+        bottom: 20%;
+        left: 0;
+        width: 100%;
+        padding: 2rem;
+        background-color: $white;
+        box-shadow: 40px 20px 100px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+         
+         .form-title {
+            font-weight: bold;
+            font-size: 2rem;
+            line-height: 3rem;
+            margin-bottom: 2rem;
+        }
+        .form-group {
+            label {
+                font-weight: 500;
+                font-size: 0.9rem;
+                line-height: 1.5rem;
+                span {
+                    color: $highlight_text_color;
+                }
+            }
+        }
+        .proff-btn {
+            padding: 1rem 3.25rem;
+            background: $highlight_text_color;
+            border-radius: 4px;
+            color: $white;
+        }
     }
 }
