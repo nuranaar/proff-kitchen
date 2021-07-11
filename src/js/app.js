@@ -15,7 +15,6 @@ $(function () {
 
   navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
 
-
     $('.slider').slick({
       dots: false,
       arrows: false,
@@ -24,7 +23,7 @@ $(function () {
       slidesToShow: 5,
       slidesToScroll: 5,
       centerMode: true,
-      autoplay:true,
+      autoplay: true,
       responsive: [
         {
           breakpoint: 2500,
@@ -59,4 +58,11 @@ $(function () {
         }
       ]
     });
+
+  $("textarea[name='message']").keyup(function (e) {
+    e.preventDefault();
+    const text_length = $(e.currentTarget).val().length
+    $(e.currentTarget).next().text(`${text_length}/160`)
+  });
+
 });
