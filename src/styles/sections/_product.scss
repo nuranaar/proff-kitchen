@@ -1,0 +1,34 @@
+#product-details {
+    margin: 3.25rem 0 5rem;
+    .product-title {
+        font-family: "Bebas Neue";
+        font-weight: bold;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        color: $second_text_color;
+    }
+    .content-title {
+        font-weight: 700;
+    }
+    .more-info {
+        .top {
+            color: $second_text_color;
+            i {
+                font-size: 0.8rem;
+            }
+            .info {
+                text-decoration: underline;
+                margin-right: 8px;
+            }
+        }
+    }
+    .product-code {
+        i {
+            font-family: "Font Awesome 5 Pro";
+            font-size: 1.25rem;
+        }
+        .info {
+            margin-left: 12px;
+        }
+    }
+}

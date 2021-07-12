@@ -82,3 +82,13 @@ body {
 .not-found {
     margin: 5rem 0;
 }
+
+.proff-btn {
+    padding: 1rem 3.25rem;
+    background: $highlight_text_color;
+    border-radius: 4px;
+    color: $white;
+    &:hover {
+        color: $white;
+    }
+}
