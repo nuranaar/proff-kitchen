@@ -1,18 +1,7 @@
 #best-products,
-#search-page {
+#search-page,
+#category-results {
     margin: 5rem 0;
-    .title {
-        font-family: $font_family_second;
-        font-weight: bold;
-        font-size: 3rem;
-        line-height: 4rem;
-    }
-    .info {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        color: $second_text_color;
-    }
 }
 .more {
     font-weight: 500;
@@ -34,6 +23,9 @@
     text-align: center;
     a:hover {
         text-decoration: none;
+        .product {
+            color: $highlight_text_color;
+        }
     }
     p {
         margin: 0;
@@ -57,6 +49,7 @@
         font-weight: 600;
         font-size: 1.25rem;
         line-height: 2rem;
+        transition: $tr_hover;
     }
     .id {
         color: $second_text_color;
@@ -94,6 +87,81 @@
         &.active .page-link {
             color: $white;
             background-color: $main_text_color;
+        }
+    }
+}
+
+.category-filter {
+    #accordion {
+        .card {
+            border: 0;
+            .card-header {
+                padding: 0;
+                background-color: $white;
+                border-color: $border;
+                .btn-link {
+                    width: 100%;
+                    background-color: $highlight_text_color;
+                    padding: 1rem 1.25rem;
+                    color: $white;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    box-shadow: none;
+                    text-decoration: none;
+                    i {
+                        transition: $tr_hover;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    &.collapsed {
+                        color: $main_text_color;
+                        background-color: $white;
+                        i {
+                            color: $highlight_text_color;
+                            transform: rotate(-90deg);
+                        }
+                    }
+                }
+            }
+            .collapse {
+                .card-body {
+                    padding: 0;
+                    .list-group {
+                        .list-group-item {
+                            font-weight: 500;
+                            font-size: 1rem;
+                            line-height: 1.5rem;
+                            a {
+                                color: $main_text_color;
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+                            border: none;
+                            border-bottom: 1px solid $border;
+                            padding: 12px 0;
+                            margin-left: 2.75rem;
+                            position: relative;
+                            &::after {
+                                position: absolute;
+                                top: 40%;
+                                left: -1.5rem;
+                                content: "";
+                                width: 0.5rem;
+                                height: 0.5rem;
+                                border-radius: 50%;
+                                background-color: $highlight_text_color;
+                            }
+                            &.active {
+                                background-color: $white;
+                                color: $highlight_text_color;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

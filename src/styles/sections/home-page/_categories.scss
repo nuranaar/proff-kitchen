@@ -85,9 +85,9 @@
                     line-height: 2rem;
                     text-transform: uppercase;
                     color: $white;
-                    &:hover {
-                        text-decoration: none;
-                    }
+                }
+                &:hover {
+                    text-decoration: none;
                 }
                 i {
                     color: $white;
