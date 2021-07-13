@@ -65,4 +65,30 @@ $(function () {
     $(e.currentTarget).next().text(`${text_length}/160`)
   });
 
+  let slide_show = (index) => {
+    let gallery_dot = $(`.gallery-dots[data-page=${index}]`);
+    let slide = $(`.mySlides[data-page=${index}]`);
+
+    gallery_dot.addClass("active");
+    gallery_dot.siblings().removeClass("active");
+
+    slide.addClass("d-block");
+    slide.siblings().removeClass("d-block");
+
+    console.log(gallery_dot, index, slide);
+  }
+  $(".gallery-dots").click((e) => {
+    slide_show($(e.currentTarget).data("page"));
+  });
+
+
+  $(".more-info .top").click(e => {
+    // $(".more-info .body").toggle("slowfast");
+    $(".product-table").toggle("linear");
+    $(e.currentTarget).toggleClass("active")
+  });
+
+  
+
+
 });

@@ -32,25 +32,39 @@
             line-height: 3rem;
             margin-bottom: 2rem;
         }
-        .form-group {
-            label {
-                font-weight: 500;
-                font-size: 0.9rem;
-                line-height: 1.5rem;
-                span {
-                    color: $highlight_text_color;
-                }
-            }
-            .text-length {
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 1rem;
-                color: $placeholder_color;
-                margin-top: 0.5rem;
-                display: flex;
-                justify-content: flex-end;
-            }
+    }
+}
+.form-group {
+    label {
+        font-weight: 500;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        span {
+            color: $highlight_text_color;
         }
-      
+    }
+    .form-control {
+        padding: 0.75rem 1rem;
+        font-weight: 500;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        height: fit-content;
+        border-color: $border;
+        &::placeholder {
+            color: $placeholder_color;
+        }
+        &:focus {
+            background-color: $holder;
+            box-shadow: none;
+        }
+    }
+    .text-length {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1rem;
+        color: $placeholder_color;
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: flex-end;
     }
 }

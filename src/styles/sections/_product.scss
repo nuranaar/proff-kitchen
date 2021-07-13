@@ -15,11 +15,18 @@
             color: $second_text_color;
             i {
                 font-size: 0.8rem;
+                transition: $tr_hover;
             }
             .info {
                 text-decoration: underline;
                 margin-right: 8px;
             }
+            &.active i {
+                transform: rotate(180deg);
+            }
+        }
+        .body {
+            display: none;
         }
     }
     .product-code {
@@ -29,6 +36,84 @@
         }
         .info {
             margin-left: 12px;
+        }
+    }
+}
+.product-table {
+    margin-top: 5rem;
+    display: none;
+    .table-title {
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        position: relative;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $border;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $highlight_text_color;
+            width: 25%;
+            height: 2px;
+        }
+    }
+    .table {
+        tbody {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            tr:nth-child(even) {
+                background-color: $background_gray;
+            }
+        }
+    }
+}
+
+#order-modal {
+    .modal {
+        backdrop-filter: blur(3px);
+        .modal-dialog {
+            margin: 25vh auto;
+            .modal-content {
+                padding: 3.25rem 3.75rem;
+                .modal-header {
+                    border: none;
+                    margin-bottom: 1.25rem;
+                    .modal-title {
+                        font-weight: 600;
+                        font-size: 1.75rem;
+                        line-height: 3rem;
+                    }
+                    .close {
+                        position: absolute;
+                        top: 1.75rem;
+                        right: 2.25rem;
+                        opacity: 1;
+                        i {
+                            color: $main_text_color;
+                            font-family: "Font Awesome 6 Pro";
+                        }
+                    }
+                }
+                .modal-body {
+                    .form-group {
+                        .input-icon {
+                            position: relative;
+                            i {
+                                line-height: 1.5rem;
+                                position: absolute;
+                                top: 0.75rem;
+                                right: 1rem;
+                                color: $placeholder_color;
+                            }
+                        }
+                        .form-control {
+                        }
+                    }
+                }
+            }
         }
     }
 }
