@@ -58,6 +58,18 @@
             box-shadow: none;
         }
     }
+    &.error {
+        .error-message {
+            font-weight: 500;
+            font-size: 0.8rem;
+            line-height: 1rem;
+            margin-top: 0.5rem;
+            color: #ef3e42;
+        }
+        .form-control {
+            border-color: #ef3e42;
+        }
+    }
     .text-length {
         font-weight: 500;
         font-size: 12px;
