@@ -2,6 +2,9 @@
     padding: 5rem 0;
     text-align: center;
     background-color: $background_gray;
+    .logo img {
+        width: 9.625rem;
+    }
 }
 .copyright {
     background-color: $highlight_text_color;
@@ -22,7 +25,6 @@
     .subscribtion {
         padding: 5rem 0;
         .subscribe-bar {
-            
             .input-group {
                 // width: 100%;
                 padding: 1rem 1.5rem;
@@ -39,7 +41,6 @@
                 line-height: 1.5rem;
                 &::placeholder {
                     color: $second_placeholder_color;
-                
                 }
                 &:focus {
                     border: none;
