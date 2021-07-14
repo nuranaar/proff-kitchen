@@ -49,6 +49,9 @@
     }
     .logo {
         width: 9.625rem;
+        img {
+            width: 100%;
+        }
     }
     .search-bar {
         max-width: 50rem;

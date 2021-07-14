@@ -117,4 +117,11 @@
     }
 }
 #success-modal {
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                padding: 7rem 4rem;
+            }
+        }
+    }
 }

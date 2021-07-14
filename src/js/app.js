@@ -88,7 +88,51 @@ $(function () {
     $(e.currentTarget).toggleClass("active")
   });
 
-  
+  $("#order-form").submit(e => {
+    e.preventDefault();
+    let productName = $("input[name='product-name']").val();
+    let phone = $("input[name='phone']").val();
+    let email = $("input[name='email']").val();
+    $.ajax({
+      type: "POST",
+      url: "url",
+      data: {
+        productName: productName,
+        phone: phone,
+        email: email
+      },
+      success: () => {
+        $("#orderModal").modal("hide")
+        $("#successModal").modal("show")
+      },
+      dataType: "json"
+    });
+  })
+
+  $("#contact-form").submit(e => {
+    e.preventDefault();
+    let fullName = $("#contact-form input[name='full-name']");
+    let email = $("#contact-form input[name='email']");
+    let message = $("#contact-form textarea[name='message']");
+    // fullName = ''
+    // message = ''
+    // email = ''
+    $.ajax({
+      type: "POST",
+      url: "url",
+      data: {
+        fullName: fullName.val(),
+        email: email.val(),
+        message: message.val()
+      },
+      success: () => {
+        fullName.val('')
+        message.val('')
+        email.val('')
+      },
+      dataType: "json"
+    });
+  })
 
 
 });

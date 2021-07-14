@@ -156,7 +156,7 @@
                             }
                             &.active {
                                 background-color: $white;
-                                color: $highlight_text_color;
+                                color: $highlight_text_color !important;
                             }
                         }
                     }

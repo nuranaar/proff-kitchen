@@ -1,7 +1,8 @@
 <section id="order-modal">
 
     <!-- Modal -->
-    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header p-0">
@@ -11,16 +12,17 @@
                     </button>
                 </div>
                 <div class="modal-body p-0">
-                    <form>
+                    <form id="order-form">
                         <div class="form-group">
                             <label for="product-name">Məhsulun adı</label>
-                            <input type="text" class="form-control" id="product-name" placeholder="Daxil edin">
+                            <input type="text" class="form-control" name="product-name" id="product-name"
+                                placeholder="Daxil edin">
 
                         </div>
                         <div class="form-group error">
                             <label for="phone">Mobil nömrə <span>*</span></label>
                             <div class="input-icon">
-                                <input class="form-control" type="text" id="phone" required="true"
+                                <input class="form-control" type="text" id="phone" name="phone" required="true"
                                     pattern="[+][9]{2}[4] [0-9]{2} [0-9]{3} [0-9]{2} [0-9]{2}"
                                     placeholder="+994 00 000 00 00">
                                 <i class="fas fa-mobile-alt"></i>
@@ -30,19 +32,15 @@
                         <div class="form-group">
                             <label for="email">E-mail <span>*</span></label>
                             <div class="input-icon">
-                                <input type="email" class="form-control" id="email" required="true"
+                                <input type="email" class="form-control" id="email" name="email" required="true"
                                     placeholder="mail@email.com">
                                 <i class="far fa-envelope"></i>
                             </div>
                         </div>
-
                         <button type="submit" class="btn proff-btn w-100 mt-2">SİFARİŞ ET</button>
                     </form>
                 </div>
-
             </div>
         </div>
     </div>
-
-
 </section>
