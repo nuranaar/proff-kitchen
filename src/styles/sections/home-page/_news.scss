@@ -7,22 +7,25 @@
             border-radius: 4px;
         }
         .card-body {
-            margin-top: 0.8rem;
             background-color: $background_gray;
             padding: 0;
+            padding-top: 0.8rem;
             .card-title {
                 font-weight: 600;
                 font-size: 1.25rem;
                 line-height: 1.2em;
+                a {
+                    color: inherit;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
             }
         }
     }
     .info {
-        span {
-            padding-left: 1rem;
-            font-weight: 500;
-            font-size: 1rem;
-            line-height: 1.5em;
+        img {
+            padding-right: 1rem;
         }
     }
 }

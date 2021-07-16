@@ -1,6 +1,9 @@
 'use strict';
 import 'bootstrap/dist/js/bootstrap';
-import 'slick-carousel/slick/slick'
+import 'slick-carousel/slick/slick';
+require('./countto');
+
+
 
 $(function () {
   $(".page-lang .list-inline-item.active").siblings().hide();
@@ -134,5 +137,16 @@ $(function () {
     });
   })
 
+  let scroll = false
+  $(window).scroll(() => {
+    let eT = $('#statistic').offset().top;
+    let wS = $(this).scrollTop();
+    if ((eT - 500) < wS && !scroll) {
+      $('.counter').countTo();
+      scroll = true;
+    }
+  })
 
+
+  
 });

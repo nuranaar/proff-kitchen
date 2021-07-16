@@ -35,15 +35,16 @@
             }
             input {
                 margin-left: 1rem;
-                border: none;
                 font-weight: 500;
                 font-size: 1rem;
                 line-height: 1.5rem;
+                border: none;
                 &::placeholder {
                     color: $second_placeholder_color;
                 }
-                &:focus {
+                &:focus, &:focus-visible {
                     border: none;
+                    outline: none;
                 }
             }
             i {
@@ -56,6 +57,9 @@
                 padding: 1rem 2rem;
                 background: $highlight_text_color;
                 border-radius: 0px 4px 4px 0px;
+                &:focus {
+                    box-shadow: none;
+                }
             }
         }
     }

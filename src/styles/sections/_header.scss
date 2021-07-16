@@ -68,8 +68,9 @@
             &::placeholder {
                 color: $second_placeholder_color;
             }
-            &:active {
+            &:focus, &:focus-visible {
                 background-color: $white;
+                outline: none;
             }
         }
         .search-btn {
@@ -77,6 +78,7 @@
             font-size: 1.5rem;
             padding: 0.5rem 1rem;
             background: $proff_gradient;
+            box-shadow: none;
             border-radius: 0px 4px 4px 0px;
         }
     }

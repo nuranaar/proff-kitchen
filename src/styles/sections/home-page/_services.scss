@@ -1,7 +1,7 @@
 #services {
     background-color: $background_gray;
     padding-bottom: 3rem;
-    .title {
+    .services-title {
         width: 70%;
         margin: 0 auto 1rem;
         font-weight: 600;
@@ -28,6 +28,7 @@
         border: none;
         margin-bottom: 2rem;
         padding: 0 2.7rem 2.5rem;
+        box-shadow: 40px 20px 100px rgba(0, 0, 0, 0.1);
         .card-img-top {
             width: fit-content !important;
             margin: 2em auto;

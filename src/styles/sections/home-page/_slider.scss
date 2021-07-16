@@ -37,9 +37,7 @@
             text-transform: uppercase;
             font-family: $font_family_second;
             font-weight: bold;
-            @include media-breakpoint-down(lg) {
-                // font-size: 3.5rem;
-            }
+            line-height: 4.5rem;
             @include media-breakpoint-down(md) {
                 font-size: 3rem;
             }
