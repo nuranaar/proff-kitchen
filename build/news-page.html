@@ -49,7 +49,9 @@
       <div class="container">
         <div class="row justify-content-between align-items-center my-4">
           <div class="logo">
+            <a href="/">
             <img class="" src="./assets/logo.png">
+            </a>
           </div>
           <div class="search-bar d-flex w-75">
             <input type="text" name="search" id="search" placeholder="Məhsul üzrə axtarış edin...">
@@ -64,7 +66,7 @@
         <div class="row">
           <div class="col-12 p-0">
             <ul class="list-inline navbar d-flex justify-content-start justify-content-md-between p-0">
-              <li class="list-inline-item"><a href="about.html"> Haqqımızda</a></li>
+              <li class="list-inline-item active"><a href="about.html"> Haqqımızda</a></li>
               <li class="list-inline-item"><a href="products.html"> Məhsullar</a></li>
               <li class="list-inline-item"><a href="spares.html"> EHTİYYAT HİSSƏLƏRİ</a></li>
               <li class="list-inline-item"><a href="accessories.html"> AKSESSUARLAR</a></li>
@@ -94,7 +96,7 @@
             </nav>
         </div>
     </div>
-  <section id="news">
+  <section id="news-content">
       <div class="container">
           <div class="row">
               <div class="col-md-4 col-6">
@@ -171,9 +173,90 @@
               </div>
           </div>
       </div>
-  </section>  <section id="partners">
+  </section>  <section id="partners" style="background-image: url(./assets/partners.png);">
       <div class="partners-content">
-          <img src="./assets/partners.png" alt="">
+          <div class="container">
+              <div class="row align-items-center h-25">
+                  <div class="col-3 ">
+                      <p class="partners-title">PARTNYORLARIMIZ</p>
+                  </div>
+                  <div class="col-9">
+                      <div class="slider" id="partners-slider">
+                          <div class="cell auto slides">
+                              <div class="partner-card">
+                                  <div class="partner-image">
+                                      <img src="./assets/partner-1.svg" alt="">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="cell auto slides">
+                              <div class="partner-card">
+                                  <div class="partner-image">
+                                      <img src="./assets/partner-2.svg" alt="">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="cell auto slides">
+                              <div class="partner-card">
+                                  <div class="partner-image">
+                                      <img src="./assets/partner-3.svg" alt="">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="cell auto slides">
+                              <div class="partner-card">
+                                  <div class="partner-image">
+                                      <img src="./assets/partner-4.svg" alt="">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="cell auto slides">
+                              <div class="partner-card">
+                                  <div class="partner-image">
+                                      <img src="./assets/partner-5.svg" alt="">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="cell auto slides">
+                              <div class="partner-card">
+                                  <div class="partner-image">
+                                      <img src="./assets/partner-1.svg" alt="">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="cell auto slides">
+                              <div class="partner-card">
+                                  <div class="partner-image">
+                                      <img src="./assets/partner-2.svg" alt="">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="cell auto slides">
+                              <div class="partner-card">
+                                  <div class="partner-image">
+                                      <img src="./assets/partner-3.svg" alt="">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="cell auto slides">
+                              <div class="partner-card">
+                                  <div class="partner-image">
+                                      <img src="./assets/partner-4.svg" alt="">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="cell auto slides">
+                              <div class="partner-card">
+                                  <div class="partner-image">
+                                      <img src="./assets/partner-5.svg" alt="">
+                                  </div>
+                              </div>
+                          </div>
+  
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
   </section>  <section id="best-products">
   
@@ -194,8 +277,7 @@
           </div>
       </div>
   
-      <div class="slider">
-  
+      <div class="slider" id="products-slider">
           <div class="cell auto slides">
               <div class="product-card">
                   <a href="#">
@@ -305,9 +387,7 @@
   
   </section>  <section id="contact-us">
       <div class="map">
-          <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1519.9217751344247!2d49.82311755824535!3d40.36799323841925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d92aa9a9515%3A0xcf64085f7a00a7be!2sVMF%20Kontinental!5e0!3m2!1sru!2s!4v1625823383795!5m2!1sru!2s"
-              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div id="map" style="width: 100%; height:500px"></div>
       </div>
       <div class="subscribtion">
           <div class="container">
@@ -330,23 +410,47 @@
               </div>
           </div>
       </div>
-  </section>  <footer>
+  </section>
+  
+  
+  <script>
+      function initMap() {
+          // The location of Uluru
+          const uluru = { lat: 40.3762987, lng: 49.8203356 };
+          // The map, centered at Uluru
+          const map = new google.maps.Map(document.getElementById("map"), {
+              mapId: '5ecd3b5bf978a98f',
+              zoom: 17,
+              center: uluru,
+          });
+          // The marker, positioned at Uluru
+          const marker = new google.maps.Marker({
+              position: uluru,
+              map: map,
+              title: "Font Awesome  Marker",
+          });
+      }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOLgEVxHjFa7o1b8iIvkzOuxqinHAiaLc&callback=initMap"
+      async></script>  <footer>
     <section id="footer">
       <div class="logo mb-4">
-        <img src="./assets/logo-light.svg" alt="">
+        <a href="/">
+          <img src="./assets/logo-light.svg" alt="">
+        </a>
       </div>
   
       <div class="container">
         <div class="row">
           <div class="col-12 p-0">
             <ul class="list-inline navbar d-flex justify-content-between mt-2 p-0">
-              <li class="list-inline-item active">Haqqımızda</li>
-              <li class="list-inline-item">Məhsullar</li>
-              <li class="list-inline-item">EHTİYYAT HİSSƏLƏRİ</li>
-              <li class="list-inline-item">AKSESSUARLAR</li>
-              <li class="list-inline-item">Kampanİyalar</li>
-              <li class="list-inline-item">Xəbərlər</li>
-              <li class="list-inline-item">BİZİMLƏ Əlaqə</li>
+              <li class="list-inline-item"><a href="about.html"> Haqqımızda</a></li>
+              <li class="list-inline-item"><a href="products.html"> Məhsullar</a></li>
+              <li class="list-inline-item"><a href="spares.html"> EHTİYYAT HİSSƏLƏRİ</a></li>
+              <li class="list-inline-item"><a href="accessories.html"> AKSESSUARLAR</a></li>
+              <li class="list-inline-item"><a href="promotions.html"> Kampanİyalar</a></li>
+              <li class="list-inline-item"><a href="news-page.html"> Xəbərlər</a></li>
+              <li class="list-inline-item"><a href="contact.html"> BİZİMLƏ Əlaqə</a></li>
             </ul>
           </div>
           <div class="col-12">
@@ -377,6 +481,7 @@
       </div>
     </div>
   </footer>
+
 <script type="text/javascript" src="js/main.js"></script></body>
 
 </html>

@@ -43,18 +43,6 @@
         const marker = new google.maps.Marker({
             position: uluru,
             map: map,
-            icon: {
-                path: faBus.icon[4] as string,
-                fillColor: "#0000ff",
-                fillOpacity: 1,
-                anchor: new google.maps.Point(
-                    faBus.icon[0] / 2, // width
-                    faBus.icon[1] // height
-                ),
-                strokeWeight: 1,
-                strokeColor: "#ffffff",
-                scale: 0.075,
-            },
             title: "Font Awesome  Marker",
         });
     }

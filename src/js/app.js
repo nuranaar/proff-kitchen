@@ -16,9 +16,8 @@ $(function () {
   });
 
 
-  navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
 
-    $('.slider').slick({
+    $('#products-slider').slick({
       dots: false,
       arrows: false,
       infinite: true,
@@ -146,7 +145,41 @@ $(function () {
       scroll = true;
     }
   })
-
-
+// debugger
+  $('#partners-slider').slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 200,
+    slidesToShow: 5,
+    slidesToScroll: 2,
+    // centerMode: true,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 2,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
+  });
   
 });
