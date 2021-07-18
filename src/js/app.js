@@ -128,16 +128,17 @@ $(function () {
       dataType: "json"
     });
   })
-
-  let scroll = false
-  $(window).scroll(() => {
-    let eT = $('#statistic').offset().top;
-    let wS = $(this).scrollTop();
-    if ((eT - 500) < wS && !scroll) {
-      $('.counter').countTo();
-      scroll = true;
-    }
-  })
+  if ($('#statistic').length) {
+    let scroll = false
+    $(window).scroll(() => {
+      let eT = $('#statistic').offset().top;
+      let wS = $(this).scrollTop();
+      if ((eT - 500) < wS && !scroll) {
+        $('.counter').countTo();
+        scroll = true;
+      }
+    })
+  }
   // debugger
   $('#partners-slider').slick({
     dots: false,

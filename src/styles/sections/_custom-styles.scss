@@ -87,8 +87,13 @@ body {
     background: $highlight_text_color;
     border-radius: 4px;
     color: $white;
+    transition: $tr_hover;
     &:hover {
         color: $white;
+        background-color: lighten($color: $highlight_text_color, $amount: 5);
+    }
+    &:focus {
+        box-shadow: none;
     }
 }
 [class*="title"] a {
