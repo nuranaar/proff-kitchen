@@ -17,49 +17,49 @@ $(function () {
 
 
 
-    $('#products-slider').slick({
-      dots: false,
-      arrows: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 5,
-      slidesToScroll: 5,
-      centerMode: true,
-      autoplay: true,
-      responsive: [
-        {
-          breakpoint: 2500,
-          settings: {
-            slidesToShow: 6,
-            slidesToScroll: 6,
-            infinite: true,
-          }
-        },
-        {
-          breakpoint: 1440,
-          settings: {
-            slidesToShow: 5,
-            slidesToScroll: 5,
-            infinite: true,
-          }
-        },
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            infinite: true,
-          }
-        },
-        {
-          breakpoint: 900,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
+  $('#products-slider').slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    centerMode: true,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 2500,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 6,
+          infinite: true,
         }
-      ]
-    });
+      },
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 5,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
+  });
 
   $("textarea[name='message']").keyup(function (e) {
     e.preventDefault();
@@ -81,13 +81,6 @@ $(function () {
   }
   $(".gallery-dots").click((e) => {
     slide_show($(e.currentTarget).data("page"));
-  });
-
-
-  $(".more-info .top").click(e => {
-    // $(".more-info .body").toggle("slowfast");
-    $(".product-table").toggle("linear");
-    $(e.currentTarget).toggleClass("active")
   });
 
   $("#order-form").submit(e => {
@@ -145,7 +138,7 @@ $(function () {
       scroll = true;
     }
   })
-// debugger
+  // debugger
   $('#partners-slider').slick({
     dots: false,
     arrows: false,
@@ -181,5 +174,5 @@ $(function () {
       }
     ]
   });
-  
+
 });

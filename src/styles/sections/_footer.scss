@@ -26,25 +26,32 @@
         padding: 5rem 0;
         .subscribe-bar {
             .input-group {
-                // width: 100%;
-                padding: 1rem 1.5rem;
                 border: 1px solid $border;
                 border-radius: 4px 0px 0px 4px;
                 display: flex;
                 align-items: center;
-            }
-            input {
-                margin-left: 1rem;
-                font-weight: 500;
-                font-size: 1rem;
-                line-height: 1.5rem;
-                border: none;
-                &::placeholder {
-                    color: $second_placeholder_color;
+                i {
+                    position: absolute;
+                    left: 1.3rem;
                 }
-                &:focus, &:focus-visible {
+                input {
+                    width: 100%;
+                    padding: 1rem 1.5rem;
+                    padding-left: 3.5rem;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
                     border: none;
-                    outline: none;
+                    transition: $tr_hover;
+                    &::placeholder {
+                        color: $second_placeholder_color;
+                    }
+                    &:focus,
+                    &:focus-visible {
+                        border: none;
+                        outline: none;
+                        background-color: $holder;
+                    }
                 }
             }
             i {

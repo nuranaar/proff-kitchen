@@ -9,6 +9,7 @@
             background: $proff_gradient;
             border-radius: 4px;
             margin: 0 4px;
+            transition: $tr_hover;
             .title {
                 margin: 0;
                 margin-left: 0.75rem;
@@ -21,6 +22,9 @@
             }
             a:hover {
                 text-decoration: none;
+            }
+            &:hover {
+                transform: translateY(-0.5rem);
             }
         }
 
@@ -40,18 +44,12 @@
                 img {
                     width: 2em;
                 }
+                &:hover {
+                    transform: translateY(0);
+                }
             }
             transform: translateY(0);
         }
-        // @include media-breakpoint-down(sm) {
-        //     .categories-group-item {
-        //         margin: 4px 0;
-        //         .title {
-        //             font-size: 1rem;
-        //         }
-        //     }
-        //     transform: translateY(0);
-        // }
     }
 }
 

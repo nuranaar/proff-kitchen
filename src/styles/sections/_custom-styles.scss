@@ -40,7 +40,6 @@ body {
     color: $main_text_color;
     font-family: $font_family_base !important;
 }
-
 .content-text {
     color: $main_text_color;
     font-weight: 500;
@@ -90,5 +89,19 @@ body {
     color: $white;
     &:hover {
         color: $white;
+    }
+}
+[class*="title"] a {
+    color: inherit;
+    transition: $tr_hover;
+    &:hover {
+        color: $highlight_text_color;
+        text-decoration: none;
+    }
+}
+a {
+    color: inherit;
+    &:hover {
+        text-decoration: none;
     }
 }
