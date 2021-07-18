@@ -126,41 +126,35 @@
                     }
                 }
             }
-            .collapse {
-                .card-body {
-                    padding: 0;
-                    .list-group {
-                        .list-group-item {
-                            font-weight: 500;
-                            font-size: 1rem;
-                            line-height: 1.5rem;
-                            a {
-                                color: $main_text_color;
-                                &:hover {
-                                    text-decoration: none;
-                                }
-                            }
-                            border: none;
-                            border-bottom: 1px solid $border;
-                            padding: 12px 0;
-                            margin-left: 2.75rem;
-                            position: relative;
-                            &::after {
-                                position: absolute;
-                                top: 40%;
-                                left: -1.5rem;
-                                content: "";
-                                width: 0.5rem;
-                                height: 0.5rem;
-                                border-radius: 50%;
-                                background-color: $highlight_text_color;
-                            }
-                            &.active {
-                                background-color: $white;
-                                color: $highlight_text_color !important;
-                            }
-                        }
-                    }
+        }
+        .list-inline {
+            .list-inline-item {
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                color: $main_text_color;
+                &:hover {
+                    color: $highlight_text_color;
+                    text-decoration: none;
+                }
+                border: none;
+                border-bottom: 1px solid $border;
+                padding: 12px 0;
+                margin-left: 2.75rem;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    top: 40%;
+                    left: -1.5rem;
+                    content: "";
+                    width: 0.5rem;
+                    height: 0.5rem;
+                    border-radius: 50%;
+                    background-color: $highlight_text_color;
+                }
+                &.active {
+                    background-color: $white;
+                    color: $highlight_text_color !important;
                 }
             }
         }
