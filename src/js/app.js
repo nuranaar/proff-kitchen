@@ -77,7 +77,6 @@ $(function () {
     slide.addClass("d-block");
     slide.siblings().removeClass("d-block");
 
-    console.log(gallery_dot, index, slide);
   }
   $(".gallery-dots").click((e) => {
     slide_show($(e.currentTarget).data("page"));
