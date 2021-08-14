@@ -113,8 +113,9 @@
                     i {
                         transition: $tr_hover;
                     }
-                    &:hover {
+                    & a:hover {
                         text-decoration: none;
+                        color: $main_text_color;
                     }
                     &.collapsed {
                         color: $main_text_color;
@@ -122,6 +123,9 @@
                         i {
                             color: $highlight_text_color;
                             transform: rotate(-90deg);
+                        }
+                        & a:hover {
+                            color: $highlight_text_color;
                         }
                     }
                 }

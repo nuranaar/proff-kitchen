@@ -6,13 +6,16 @@ require('./countto');
 
 
 $(function () {
-  $(".page-lang .list-inline-item.active").siblings().hide();
-  $(".page-lang .list-inline-item ").click(function (e) {
-    e.preventDefault();
-    $(e.target).addClass("active");
-    $(e.target).siblings().removeClass("active");
-    $(e.target).siblings().toggle(0, function () {
-    });
+  $(".page-lang .active").siblings().hide();
+  $(".page-lang .list-inline-item").on("click", function (e) {
+    if ($(e.target).hasClass("active")) {
+      $(e.target).siblings().toggle(0);
+    }
+  });
+  $(".page-lang .list-inline-item a").click(function (e) {
+    $(e.target).parent().addClass("active");
+    $(e.target).parent().siblings().removeClass("active");
+    $(e.target).parent().siblings().hide();
   });
 
 
@@ -82,51 +85,7 @@ $(function () {
     slide_show($(e.currentTarget).data("page"));
   });
 
-  // $("#order-form").submit(e => {
-  //   e.preventDefault();
-  //   let productName = $("input[name='product-name']").val();
-  //   let phone = $("input[name='phone']").val();
-  //   let email = $("input[name='email']").val();
-  //   $.ajax({
-  //     type: "POST",
-  //     url: "url",
-  //     data: {
-  //       productName: productName,
-  //       phone: phone,
-  //       email: email
-  //     },
-  //     success: () => {
-  //       $("#orderModal").modal("hide")
-  //       $("#successModal").modal("show")
-  //     },
-  //     dataType: "json"
-  //   });
-  // })
 
-  // $("#contact-form").submit(e => {
-  //   e.preventDefault();
-  //   let fullName = $("#contact-form input[name='full-name']");
-  //   let email = $("#contact-form input[name='email']");
-  //   let message = $("#contact-form textarea[name='message']");
-  //   // fullName = ''
-  //   // message = ''
-  //   // email = ''
-  //   $.ajax({
-  //     type: "POST",
-  //     url: "url",
-  //     data: {
-  //       fullName: fullName.val(),
-  //       email: email.val(),
-  //       message: message.val()
-  //     },
-  //     success: () => {
-  //       fullName.val('')
-  //       message.val('')
-  //       email.val('')
-  //     },
-  //     dataType: "json"
-  //   });
-  // })
   if ($('#statistic').length) {
     let scroll = false
     $(window).scroll(() => {
@@ -175,4 +134,15 @@ $(function () {
     ]
   });
 
+
+  const sliceText = () => {
+    const elems = document.querySelectorAll(".slice-text")
+    for (let i = 0; i < elems.length; i++) {
+      const elem = $(elems[i])
+      const text = elem.text()
+      const count = elem.data("count")
+      elem.text(text.slice(0, count) + "...")
+    }
+  }
+  sliceText()
 });

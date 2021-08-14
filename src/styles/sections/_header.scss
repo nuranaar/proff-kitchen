@@ -37,12 +37,15 @@
                 transition: $tr_hover;
                 cursor: pointer;
                 display: inline-block;
-                &:hover {
+                & a:hover {
                     color: $highlight_text_color;
                 }
                 &.active {
                     padding: 0.5rem 1rem;
                     background-color: $holder;
+                    a{
+                        pointer-events: none;
+                    }
                 }
             }
         }
