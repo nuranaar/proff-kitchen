@@ -43,7 +43,7 @@
                 &.active {
                     padding: 0.5rem 1rem;
                     background-color: $holder;
-                    a{
+                    a {
                         pointer-events: none;
                     }
                 }
@@ -56,6 +56,7 @@
             width: 100%;
         }
     }
+
     .search-bar {
         max-width: 50rem;
         @include media-breakpoint-down(sm) {
@@ -71,7 +72,8 @@
             &::placeholder {
                 color: $second_placeholder_color;
             }
-            &:focus, &:focus-visible {
+            &:focus,
+            &:focus-visible {
                 background-color: $white;
                 outline: none;
             }
@@ -86,25 +88,42 @@
         }
     }
 }
-.navbar {
-    &.list-inline {
-        .list-inline-item {
-            font-family: $font_family_second;
-            font-weight: bold;
-            font-size: 1.5rem;
-            line-height: 3rem;
-            letter-spacing: 0.02em;
-            text-transform: uppercase;
-            a {
-                color: $main_text_color;
-                transition: $tr_hover;
-                &:hover {
-                    text-decoration: none;
-                    color: $highlight_text_color;
+nav {
+    .collapse {
+        .navbar {
+            &.list-inline {
+                .list-inline-item {
+                    font-family: $font_family_second;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    line-height: 3rem;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    a {
+                        color: $main_text_color;
+                        transition: $tr_hover;
+                        &:hover {
+                            text-decoration: none;
+                            color: $highlight_text_color;
+                        }
+                    }
+                    &.active a {
+                        color: $highlight_text_color;
+                    }
                 }
             }
-            &.active a {
-                color: $highlight_text_color;
+        }
+        &.show {
+            .navbar {
+                flex-direction: column;
+            }
+            .navbar-wrapper {
+                width: 100%;
+                height: 27%;
+                background: $highlight_text_color;
+                position: absolute;
+                top: -27%;
+                left: 0;
             }
         }
     }

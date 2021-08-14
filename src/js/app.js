@@ -145,4 +145,15 @@ $(function () {
     }
   }
   sliceText()
+
+
+  $(".navbar-toggler").click((e) => {
+    $(".collapse").toggle(0)
+    $(".collapse").toggleClass("show")
+  })
+
+
+
+
+
 });
