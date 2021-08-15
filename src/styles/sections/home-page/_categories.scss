@@ -43,7 +43,7 @@
         }
         @include media-breakpoint-down(md) {
             .categories-group-item {
-                padding: 1 em 1.5em;
+                padding: 1em 1.5em;
                 margin: 4px 0;
                 .title {
                     font-size: 24px;
@@ -120,11 +120,13 @@
                 }
             }
             @include media-breakpoint-down(sm) {
+                margin: 4px 8px;
+                border-radius: 6px;
                 &:first-child {
-                    border-radius: 6px 6px 0 0;
+                    border-radius: 6px;
                 }
                 &:last-child {
-                    border-radius: 0;
+                    border-radius: 6px;
                 }
             }
         }
@@ -147,14 +149,15 @@
             }
             @include media-breakpoint-down(sm) {
                 background: #dd4848;
+                border-radius: 6px;
                 &:nth-child(odd) {
                     background: $highlight_text_color;
                 }
                 &:first-child {
-                    border-radius: 0;
+                    border-radius: 6px;
                 }
                 &:last-child {
-                    border-radius: 0 0 6px 6px;
+                    border-radius: 6px;
                 }
             }
         }

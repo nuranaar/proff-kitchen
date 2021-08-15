@@ -6,6 +6,9 @@
         .card-img-top {
             border-radius: 4px;
             height: 9rem;
+            @include media-breakpoint-down(sm){
+                height: 200px;
+            }
         }
         .card-body {
             background-color: $background_gray;
