@@ -210,7 +210,7 @@ $container-max-widths: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $container-max-widths: map-merge(
   (
-    sm: 540px,
+    sm: 400px,
     md: 720px,
     lg: 960px,
     xl: 1072px

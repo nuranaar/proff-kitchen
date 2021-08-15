@@ -2,6 +2,9 @@
     .background {
         position: relative;
         width: 100%;
+        @include media-breakpoint-down(sm){
+            height: 375px;
+        }
         .background-image {
             width: 100%;
             object-fit: cover;
@@ -79,6 +82,10 @@
                     height: 100%;
                     object-fit: contain;
                 }
+            }
+            @include media-breakpoint-down(sm){
+                width: 50%;
+                margin: auto;
             }
         }
     }

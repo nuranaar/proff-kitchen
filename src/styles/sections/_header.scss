@@ -11,6 +11,12 @@
                     color: $proff_hover;
                 }
             }
+            @include media-breakpoint-down(sm) {
+                i {
+                    margin: 0 1rem;
+                    font-size: 2rem;
+                }
+            }
         }
     }
 }
@@ -125,31 +131,38 @@
         }
     }
 }
-nav {
-    .collapse {
-        .navbar {
-            &.list-inline {
-                .list-inline-item {
-                    font-family: $font_family_second;
-                    font-weight: bold;
-                    font-size: 1.5rem;
-                    line-height: 3rem;
-                    letter-spacing: 0.02em;
-                    text-transform: uppercase;
-                    a {
-                        color: $main_text_color;
-                        transition: $tr_hover;
-                        &:hover {
-                            text-decoration: none;
-                            color: $highlight_text_color;
-                        }
-                    }
-                    &.active a {
-                        color: $highlight_text_color;
-                    }
+.navbar {
+    &.list-inline {
+        .list-inline-item {
+            font-family: $font_family_second;
+            font-weight: bold;
+            font-size: 1.5rem;
+            line-height: 3rem;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            a {
+                color: $main_text_color;
+                transition: $tr_hover;
+                &:hover {
+                    text-decoration: none;
+                    color: $highlight_text_color;
                 }
             }
+            &.active a {
+                color: $highlight_text_color;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 24px;
+                line-height: 48px;
+            }
         }
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+        }
+    }
+}
+nav {
+    .collapse {
         &.show {
             .navbar {
                 flex-direction: column;

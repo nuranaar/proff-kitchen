@@ -60,6 +60,13 @@ $(function () {
           slidesToShow: 2,
           slidesToScroll: 2
         }
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       }
     ]
   });

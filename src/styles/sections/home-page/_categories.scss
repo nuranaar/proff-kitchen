@@ -10,9 +10,12 @@
             border-radius: 4px;
             margin: 0 4px;
             transition: $tr_hover;
+            img {
+                height: 40px;
+                margin: 0 0.75rem;
+            }
             .title {
                 margin: 0;
-                margin-left: 0.75rem;
                 font-family: $font_family_second;
                 font-weight: bold;
                 font-size: 1.5rem;
@@ -40,12 +43,23 @@
         }
         @include media-breakpoint-down(md) {
             .categories-group-item {
+                padding: 1 em 1.5em;
                 margin: 4px 0;
+                .title {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
                 img {
-                    width: 2em;
+                    width: 3rem;
                 }
                 &:hover {
                     transform: translateY(0);
+                }
+                width: 49%;
+                flex-direction: column;
+                &:last-child {
+                    flex-direction: row;
+                    width: 100%;
                 }
             }
             transform: translateY(0);

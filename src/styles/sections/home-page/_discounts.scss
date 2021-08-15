@@ -25,7 +25,6 @@
                 transform: scale(1);
             }
         }
-
         .category {
             text-decoration: underline;
             margin-bottom: 1.5rem;
@@ -62,7 +61,10 @@
             padding: 2.5em;
         }
         @include media-breakpoint-between(xs, sm) {
-            padding: 3rem;
+            padding: 4.5rem 3rem;
+            .title {
+                font-size: 2rem;
+            }
         }
     }
     .news-card {
@@ -94,7 +96,10 @@
             padding: 2.5em;
         }
         @include media-breakpoint-between(xs, sm) {
-            padding: 3rem;
+            padding: 4.5rem 3rem;
+            .title {
+                font-size: 2rem;
+            }
         }
     }
 }

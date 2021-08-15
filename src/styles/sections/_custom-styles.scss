@@ -1,4 +1,7 @@
 @media (max-width: 576px) {
+    .container {
+        max-width: 400px;
+    }
     html {
         font-size: 11px;
     }
@@ -111,6 +114,6 @@ a {
     }
 }
 
-.far{
+.far {
     font-family: "Font Awesome 5 Pro";
 }

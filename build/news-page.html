@@ -26,7 +26,7 @@
   
     <sectoin id="pre-header">
       <div class="line"></div>
-      <div class="container">
+      <div class="container d-md-block d-none">
         <div class="row justify-content-between align-items-center my-3">
           <div class="list-inline social-media my-auto">
             <a class="list-inline-item"><i class="fab fa-facebook"></i></a>
@@ -46,34 +46,78 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row justify-content-between align-items-center my-4">
+      <div class="container-md container-fluid">
+        <div class="row justify-content-sm-between justify-content-around align-items-center my-4">
+          <button class="search-toggler btn d-md-none" type="button" data-toggle="collapse">
+            <i class="far fa-search" aria-hidden="true"></i>
+          </button>
           <div class="logo">
             <a href="/">
               <img class="" src="./assets/logo.png">
             </a>
           </div>
-          <div class="search-bar d-flex w-75">
-            <input type="text" name="search" id="search" placeholder="Məhsul üzrə axtarış edin...">
-            <button class="btn search-btn" type="submit">
-              <i class="fa fa-search" aria-hidden="true"></i>
-            </button>
+          <div class="search-collapse">
+            <div class="search-bar d-flex ">
+              <button class="search-icon d-md-none d-block">
+                <i class="far fa-search" aria-hidden="true"></i>
+              </button>
+              <input type="text" name="search" id="search" placeholder="Məhsul üzrə axtarış edin...">
+              <button class="btn search-btn" type="submit">
+                <i class="far fa-search" aria-hidden="true"></i>
+              </button>
+            </div>
           </div>
+          <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="far fa-bars" aria-hidden="true"></i>
+          </button>
         </div>
   
       </div>
-      <div class="container">
+      <div class="container-md container-fluid">
         <div class="row">
           <div class="col-12 p-0">
-            <ul class="list-inline navbar d-flex justify-content-start justify-content-md-between p-0">
-              <li class="list-inline-item active"><a href="about.html"> Haqqımızda</a></li>
-              <li class="list-inline-item"><a href="products.html"> Məhsullar</a></li>
-              <li class="list-inline-item"><a href="spares.html"> EHTİYYAT HİSSƏLƏRİ</a></li>
-              <li class="list-inline-item"><a href="accessories.html"> AKSESSUARLAR</a></li>
-              <li class="list-inline-item"><a href="promotions.html"> Kampanİyalar</a></li>
-              <li class="list-inline-item"><a href="news-page.html"> Xəbərlər</a></li>
-              <li class="list-inline-item"><a href="contact.html"> BİZİMLƏ Əlaqə</a></li>
-            </ul>
+            <nav class=" ">
+              <div class="collapse d-md-block">
+                <div class="navbar-wrapper">
+                  <button class="navbar-toggler d-md-none text-white close-navbar" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="far fa-times" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <ul class=" list-inline navbar d-flex justify-content-start justify-content-md-between p-0">
+                  <li class="list-inline-item active"><a href="about.html"> Haqqımızda</a></li>
+                  <li class="list-inline-item"><a href="products.html"> Məhsullar</a></li>
+                  <li class="list-inline-item"><a href="spares.html"> EHTİYYAT HİSSƏLƏRİ</a></li>
+                  <li class="list-inline-item"><a href="accessories.html"> AKSESSUARLAR</a></li>
+                  <li class="list-inline-item"><a href="promotions.html"> Kampanİyalar</a></li>
+                  <li class="list-inline-item"><a href="news-page.html"> Xəbərlər</a></li>
+                  <li class="list-inline-item"><a href="contact.html"> BİZİMLƏ Əlaqə</a></li>
+                </ul>
+                <div class="container d-md-none d-block">
+                  <div class="row  flex-column justify-content-between align-items-center my-3">
+                    <div class="page-lang d-flex align-items-center my-3">
+                      <p class="my-auto">
+                        Dil seçimi
+                      </p>
+                      <ul class="list-inline m-0">
+                        <li class="list-inline-item active"><a href="#az">AZ</a></li>
+                        <li class="list-inline-item"><a href="#en">en</a></li>
+                        <li class="list-inline-item"><a href="#ru">ru</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-inline social-media mt-3">
+                      <a class="list-inline-item"><i class="fab fa-facebook"></i></a>
+                      <a class="list-inline-item"><i class="fab fa-instagram"></i></a>
+                      <a class="list-inline-item"><i class="fab fa-linkedin"></i></a>
+                      <a class="list-inline-item"><i class="fab fa-youtube"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
