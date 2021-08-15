@@ -151,6 +151,18 @@ $(function () {
     $(".collapse").toggle(0)
     $(".collapse").toggleClass("show")
   })
+  $(".search-toggler").click((e) => {
+    $(".search-collapse").toggleClass("mobile-search")
+    $(".search-btn .far").removeClass("fa-search")
+    $(".search-btn .far").addClass("fa-arrow-right")
+    // $(".search-collapse").toggle(0)
+  })
+  $(".search-icon").click((e) => {
+    $(".search-collapse").toggleClass("mobile-search")
+    $(".search-btn .far").removeClass("fa-arrow-right")
+    $(".search-btn .far").addClass("fa-search")
+    // $(".search-collapse").toggle(0)
+  })
 
 
 
