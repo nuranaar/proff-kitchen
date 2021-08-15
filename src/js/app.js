@@ -170,6 +170,12 @@ $(function () {
     $(".search-btn .far").addClass("fa-search")
     // $(".search-collapse").toggle(0)
   })
+  $(".mobile-filter-toggler").click((e) => {
+    $(".category-filter").addClass("mobile-filter")
+  })
+  $(".mobile-filter-close").click((e) => {
+    $(".category-filter").removeClass("mobile-filter")
+  })
 
 
 
