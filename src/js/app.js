@@ -176,6 +176,10 @@ $(function () {
   $(".mobile-filter-close").click((e) => {
     $(".category-filter").removeClass("mobile-filter")
   })
+  $(".btn-close").click((e) => {
+    $(".btn-link").addClass("collapsed")
+    $(".collapse").removeClass("show")
+  })
 
 
 

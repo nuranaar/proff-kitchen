@@ -65,21 +65,22 @@
 
 .pagination {
     margin-top: 1rem;
+    justify-content: space-around;
     .page-item {
         margin: 0 12px;
         .page-link {
-            width: 2.5rem;
-            height: 2.5rem;
+            width: 3rem;
+            height: 3rem;
             text-align: center;
             border: none;
             border-radius: 4px;
             background-color: $holder;
             color: $second_placeholder_color;
             font-weight: 500;
-            font-size: 14px;
-            line-height: 24px;
+            font-size: 1rem;
+            line-height: 2rem;
             i {
-                line-height: 24px;
+                line-height: 2rem;
             }
             &:focus {
                 box-shadow: none;
@@ -141,35 +142,69 @@
                     }
                 }
             }
-        }
-        .list-inline {
-            .list-inline-item {
-                font-weight: 500;
-                font-size: 1rem;
-                line-height: 1.5rem;
-                color: $main_text_color;
-                &:hover {
-                    color: $highlight_text_color;
-                    text-decoration: none;
+            .collapse, .collapsing {
+                @include media-breakpoint-down(sm) {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 5;
+                    background-color: #fff;
+                    padding: 32px;
+                    .card-header {
+                        border-bottom: none;
+                        .btn-close {
+                            background-color: #fff;
+                            color: $highlight_text_color;
+                            padding-left: 0;
+                            i {
+                                margin-right: 16px;
+                            }
+                        }
+                    }
+                    .list-inline {
+                        display: flex;
+                        flex-direction: column;
+                        .list-inline-item {
+                            font-size: 16px;
+                            margin-left: 0;
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
                 }
-                border: none;
-                border-bottom: 1px solid $border;
-                padding: 12px 0;
-                margin-left: 2.75rem;
-                position: relative;
-                &::after {
-                    position: absolute;
-                    top: 40%;
-                    left: -1.5rem;
-                    content: "";
-                    width: 0.5rem;
-                    height: 0.5rem;
-                    border-radius: 50%;
-                    background-color: $highlight_text_color;
-                }
-                &.active {
-                    background-color: $white;
-                    color: $highlight_text_color !important;
+            }
+            .list-inline {
+                .list-inline-item {
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    color: $main_text_color;
+                    &:hover {
+                        color: $highlight_text_color;
+                        text-decoration: none;
+                    }
+                    border: none;
+                    border-bottom: 1px solid $border;
+                    padding: 12px 0;
+                    margin-left: 2.75rem;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        top: 40%;
+                        left: -1.5rem;
+                        content: "";
+                        width: 0.5rem;
+                        height: 0.5rem;
+                        border-radius: 50%;
+                        background-color: $highlight_text_color;
+                    }
+                    &.active {
+                        background-color: $white;
+                        color: $highlight_text_color !important;
+                    }
                 }
             }
         }
@@ -187,26 +222,45 @@
         width: 100%;
         height: 100%;
         z-index: 5;
+
         #accordion {
             .card {
-                .card-header {
-                    border-bottom: none;
-                    .btn-link {
-                        font-size: 16px;
-                        i {
-                            margin-right: 16px;
-                        }
-                    }
-                }
-                .collapse {
-                    .list-inline {
-                        display: flex;
-                        flex-direction: column;
-                        .list-inline-item {
-                            font-size: 14px;
-                        }
-                    }
-                }
+                // .collapse {
+                //     background-color: #fff;
+                //     padding: 32px;
+                //     display: none;
+                //     .card-header {
+                //         border-bottom: none;
+                //         .btn-close {
+                //             background-color: #fff;
+                //             color: $highlight_text_color;
+                //             padding-left: 0;
+                //             i {
+                //                 margin-right: 16px;
+                //             }
+                //         }
+                //     }
+                //     .list-inline {
+                //         display: flex;
+                //         flex-direction: column;
+                //         .list-inline-item {
+                //             font-size: 16px;
+                //             margin-left: 0;
+                //             &::after {
+                //                 display: none;
+                //             }
+                //         }
+                //     }
+                //     &.show {
+                //         position: fixed;
+                //         top: 0;
+                //         left: 0;
+                //         width: 100%;
+                //         height: 100%;
+                //         z-index: 5;
+                //         display: block;
+                //     }
+                // }
             }
         }
     }
